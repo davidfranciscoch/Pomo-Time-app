@@ -1,0 +1,174 @@
+/** FONT */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@600&family=Roboto&display=swap');
+/** CSS CODE */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4ade80;
+    transition: 1s;
+}
+
+.container {
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+
+/* * Header Section */
+div.head {
+    width: 100%;
+    height: 100px;
+}
+
+div.head h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 100px;
+    color: white;
+}
+
+/* * Content Section */
+div.focus-clock {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    line-height: 150px;
+    color: white;
+}
+div.break-clock {
+    border-top: 5px double white;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    line-height: 150px;
+    color: white;
+}
+
+p.label-1 {
+    color: darkgreen;
+    position: absolute;
+    top: 60px;
+    font-size: 25px;
+}
+
+#dark,
+#light {
+    width: 60px;
+    height: 25px;
+    background-color: #15803d;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+p.label-2 {
+    color: darkgreen;
+    position: absolute;
+    top: 300px;
+    font-size: 25px;
+    height: 30px;
+}
+
+div.btn-group {
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+}
+
+.start,
+.reset,
+.pause {
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    background-color: #15803d;
+    color: white;
+    border-radius: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+}
+
+.start:hover,
+.reset:hover,
+.pause:hover {
+    border-radius: 20px 100px;
+    transform: translateY(-5px);
+}
+
+/* * Footer Section */
+div.settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+p {
+    color: white;
+}
+
+div.focus-time,
+div.break-time {
+    margin: 0 5px;
+}
+
+div.darkMode {
+    position: absolute;
+    right: 270px;
+    top: 200px;
+}
+
+#dark {
+    position: absolute;
+}
+
+#focusTime,
+#breakTime {
+    width: 100px;
+    border: 1px solid #15803d;
+    border-radius: 10px;
+    background-color: #15803d;
+    color: white;
+    text-align: center;
+}
+
+button[type='submit'] {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #15803d;
+    box-shadow: inset 0 -8px 0 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+button[type='submit']:hover {
+    transform: translateY(-5px);
+    box-shadow: inset 0 -6px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+/* * dark mode colors transition */
+div.label-1,
+div.label-2,
+div.start,
+div.pause,
+div.reset,
+#focusTime,
+#breakTime,
+div.saveBtn {
+    transition: 1s;
+}

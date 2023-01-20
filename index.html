@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PomoTime</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <!-- * Header Section -->
+            <div class="head">
+                <h1>Pomo Time 🔔</h1>
+            </div>
+            <!-- * Content Section -->
+            <div class="focus-clock">
+                <p class="label-1">Focus Time</p>
+                <div class="mins" id="focusMins">25</div>
+                <div>:</div>
+                <div class="secs" id="focusSecs">00</div>
+                <audio src="sound/snaps.mp3"></audio>
+            </div>
+            <div class="darkMode">
+                <button id="dark">Dark</button>
+                <button id="light">Light</button>
+            </div>
+            <div class="break-clock">
+                <p class="label-2">Break Time</p>
+                <div class="mins" id="breakMins">05</div>
+                <div>:</div>
+                <div class="secs" id="breakSecs">00</div>
+            </div>
+
+            <div class="btn-group">
+                <button class="start">Start</button>
+                <button class="reset">Reset</button>
+                <button class="pause">Pause</button>
+            </div>
+            <!-- * Footer Section -->
+            <div class="settings">
+                <div class="focus-time">
+                    <p>Focus</p>
+                    <input
+                        type="number"
+                        name=""
+                        id="focusTime"
+                        max="60"
+                        min="0"
+                        value="0"
+                    />
+                </div>
+                <div class="break-time">
+                    <p>Break</p>
+                    <input
+                        type="number"
+                        name=""
+                        id="breakTime"
+                        max="60"
+                        min="0"
+                        value="0"
+                    />
+                </div>
+            </div>
+            <button type="submit" class="saveBtn">Save Settings</button>
+        </div>
+
+        <!-- * Javascript -->
+        <script src="time.js"></script>
+        <script src="settings.js"></script>
+        <script src="dark-mode.js"></script>
+    </body>
+</html>
